@@ -1,16 +1,18 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styled from 'styled-components';
 
-import logo from '../../images/logo.svg';
-import wclogo from '../../images/worthcoding.svg';
+import logo from '../../images/worthcoding.svg';
+
+
+const HeaderWrapper = styled.div`
+background: Crimson;
+margin-bottom: 1.45rem;
+`;
+
 
 const Header = () => (
-  <div
-    style={{
-      background: 'DarkSlateBlue',
-      marginBottom: '1.45rem',
-    }}
-  >
+  <HeaderWrapper>
     <div
       style={{
         margin: '0 auto',
@@ -26,7 +28,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          <img src={wclogo} alt="logo" />
+          <img src={logo} alt="logo" />
         </Link>
       </h1>
     </div>
@@ -40,7 +42,7 @@ const Header = () => (
         </li>
       </ul>
     </nav>
-  </div>
+  </HeaderWrapper>
 )
 
 export default Header
