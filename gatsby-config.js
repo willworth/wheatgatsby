@@ -1,6 +1,11 @@
+// import { Component } from "react";
+
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby wheat',
+    title: "Worth Coding",
+    desc: "A coding blog by Will Worth",
   },
-  plugins: ['gatsby-plugin-react-helmet'],
+  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-styled-components"]
 };
+
+ 

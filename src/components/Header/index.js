@@ -5,21 +5,25 @@ import styled from 'styled-components';
 import logo from '../../images/worthcoding.svg';
 
 
+const HeaderContainer = styled.div`
+margin: 0 auto;
+max-width: 960px;
+padding: 1.45rem 1.0875rem;
+`;
 const HeaderWrapper = styled.div`
-background: Crimson;
+background: Darkslategrey;
 margin-bottom: 1.45rem;
+h1 {
+  img {
+    height: 80px;
+  }
+}
 `;
 
 
 const Header = () => (
   <HeaderWrapper>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
+    <HeaderContainer>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -31,17 +35,17 @@ const Header = () => (
           <img src={logo} alt="logo" />
         </Link>
       </h1>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
+      </nav>
+    </HeaderContainer>
   </HeaderWrapper>
 )
 
