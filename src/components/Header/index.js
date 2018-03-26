@@ -1,10 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import logo from '../../images/logo.svg';
+import wclogo from '../../images/worthcoding.svg';
+
 const Header = () => (
   <div
     style={{
-      background: 'rebeccapurple',
+      background: 'DarkSlateBlue',
       marginBottom: '1.45rem',
     }}
   >
@@ -23,10 +26,20 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Gatsby
+          <img src={wclogo} alt="logo" />
         </Link>
       </h1>
     </div>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+      </ul>
+    </nav>
   </div>
 )
 

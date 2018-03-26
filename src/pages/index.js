@@ -6,8 +6,7 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Welcome to the wheat plain Gatsby site.</p>
     <p>This is the project for the level up tuts gatsby tutorial</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <p>Here's a page for colours on   <a href="https://www.w3schools.com/colors/colors_names.asp">w3schools</a></p>
   </div>
 )
 
