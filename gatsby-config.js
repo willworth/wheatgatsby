@@ -1,11 +1,19 @@
-// import { Component } from "react";
-
 module.exports = {
   siteMetadata: {
-    title: "Worth Coding",
-    desc: "A coding blog by Will Worth",
+    title: "Gatsby Default Starter",
+    desc: "A new blog"
   },
-  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-styled-components"]
+  plugins: [
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-styled-components",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "img",
+        path: `${__dirname}/src/images`
+      }
+    },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp"
+  ]
 };
-
- 
