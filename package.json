@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "WorthCoding",
+  "description": "A coder blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Will Worth <will.worth@gmail.com>",
   "dependencies": {
+    "babel-preset-airbnb": "^2.4.0",
     "gatsby": "^1.9.236",
     "gatsby-link": "^1.6.39",
     "gatsby-plugin-react-helmet": "^2.0.8",

@@ -8,8 +8,11 @@ const IndexPage = ({data}) => (
     <p>{data.site.siteMetadata.title}</p>
     <p>{data.site.siteMetadata.desc}</p>
     <p>This is the wheat Gatsby site.</p>
-    <p>I'm following the level up tuts gatsby tutorial</p>
     <p>Here's a page for colours on   <a href="https://www.w3schools.com/colors/colors_names.asp">w3schools</a></p>
+    <p>Here's <a href="http://localhost:8000/___graphql">graphql</a></p>
+    <p>Remember that gql queires cannot be placed directly in components, but rather
+      have to be in layouts, and passed down as props.  
+    </p>
   </div>
 )
 
